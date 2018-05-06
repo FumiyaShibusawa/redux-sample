@@ -31,7 +31,6 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
 COPY . .
 
 RUN bundle install
-RUN rails new . --webpack=react --skip-active-record
 RUN yarn install
 
 EXPOSE 5000
