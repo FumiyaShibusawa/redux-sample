@@ -17,6 +17,10 @@ gem 'webpacker'
 # gem 'mini_racer', platforms: :ruby
 
 gem 'mongoid'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'slim-rails'
+gem 'faker'
+gem 'font-awesome-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -55,6 +59,18 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+end
+
+group :staging do
+  gem 'pry-remote'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
