@@ -21,7 +21,7 @@ services:
     volumes:
       - data_mongo:/data/db
     ports:
-      - "${EXTERNAL_MONGO_PORT:-27017}:27017"
+      - "${EXTERNAL_MONGO_PORT:-27018}:27018"
 
   kvs:
     build:

@@ -1,3 +1,3 @@
 FROM mongo:latest
 
-EXPOSE 5506
+EXPOSE 27018
