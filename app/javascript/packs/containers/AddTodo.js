@@ -25,4 +25,9 @@ const AddTodo = ({ dispatch }) => {
   )
 }
 
+/*
+単純にdispatchだけアサインする場合は、connectに引数は必要なし。
+https://github.com/reactjs/react-redux/blob/master/docs/api.md#examples
+*/
+
 export default connect()(AddTodo)

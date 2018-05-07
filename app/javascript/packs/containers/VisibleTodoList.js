@@ -16,6 +16,22 @@ const getVisibleTodos = (todos, filter) => {
   }
 };
 
+/*
+const TodoList = ({ todos, toggleTodo }) => (
+  <ul>
+    {todos.map(todo =>
+      <Todo
+        key={ todo.id }
+        { ...todo }
+        onClick={() => toggleTodo(todo.id)}
+      />
+    )}
+  </ul>
+)
+todosは、mapStateToPropsによって更新
+toggleTodoは、mapDispatchToPropsによってイベントをアサイン
+*/
+
 const mapStateToProps = state => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
 });
